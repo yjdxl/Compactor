@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compacter - 智能图片压缩工具</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="imgs/logo.png" alt="Compacter Logo" class="logo">
+                <span class="brand-name">Compacter</span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#features">功能特点</a></li>
+                <li><a href="#how-it-works">使用方法</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+            <button class="download-btn" onclick="scrollToQR()">
+                立即使用
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">智能图片压缩工具</h1>
+                <p class="hero-subtitle">纯本地处理，精准控制目标大小，保护您的隐私安全</p>
+                <div class="hero-buttons">
+                    <button class="primary-btn" onclick="scrollToQR()">
+                        <span>扫码体验</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </button>
+                    <button class="secondary-btn" onclick="scrollToFeatures()">了解更多</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="screenshot-container">
+                    <img src="imgs/app_screenshot.jpg" alt="Compacter App Screenshot" class="app-screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特点 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon privacy">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3>隐私安全</h3>
+                    <p>纯本地处理，无需上传服务器，数据零泄露</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon target">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>精准控制</h3>
+                    <p>自定义目标文件大小，智能计算最优分辨率</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 19V5l-7 7h7z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>高效压缩</h3>
+                    <p>智能迭代算法，在保证大小的同时最大程度保留画质</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon formats">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>多格式支持</h3>
+                    <p>完美支持 JPG、PNG、BMP 等主流图片格式</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用方法 -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">使用方法</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                    </div>
+                    <h3>选择图片</h3>
+                    <p>从相册或相机选择需要压缩的图片</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8v4l3 3"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </div>
+                    <h3>设置大小</h3>
+                    <p>输入目标文件大小，智能预估输出分辨率</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3>开始压缩</h3>
+                    <p>一键压缩，智能迭代优化图片质量</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3>保存相册</h3>
+                    <p>压缩完成后一键保存到本地相册</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section id="download" class="download">
+        <div class="container download-content">
+            <div class="download-info">
+                <h2>立即体验 Compacter</h2>
+                <p>扫码打开微信小程序，开始智能图片压缩之旅</p>
+                <div class="download-features">
+                    <span class="feature-tag">无需下载</span>
+                    <span class="feature-tag">即用即走</span>
+                    <span class="feature-tag">永久免费</span>
+                </div>
+            </div>
+            <div class="qr-container">
+                <div class="qr-card">
+                    <img src="imgs/QR.jpg" alt="Compacter 小程序二维码" class="qr-code">
+                    <p class="qr-label">微信扫码使用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于 Compacter</h2>
+            <div class="about-content">
+                <p>Compacter 是一款专注于图片压缩的微信小程序，致力于为用户提供简单、安全、高效的图片处理体验。</p>
+                <p>我们深知隐私的重要性，因此所有图片处理均在本地完成，无需上传服务器，真正做到数据零泄露。</p>
+                <p>通过智能迭代压缩算法，Compacter 能够在保证目标文件大小的同时，最大程度保留图片画质，让您的图片分享更加便捷。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="imgs/logo.png" alt="Compacter Logo" class="footer-logo">
+                    <span class="footer-brand-name">Compacter</span>
+                </div>
+                <p class="footer-copyright">© 2024 Compacter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
